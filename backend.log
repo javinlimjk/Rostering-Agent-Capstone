@@ -1,0 +1,121 @@
+INFO:     Started server process [91884]
+INFO:     Waiting for application startup.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5707.89it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+/Users/javinlim/Documents/School/Year 3/Multi-Country-Rostering-2/.venv/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/utils.py:184: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, store_uri)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+📄 Loaded 5 text documents.
+📄 Loaded 0 PDF documents.
+✂️ Split into 11 chunks.
+Creating BM25 Retriever...
+✅ BM25 Documents saved to /Users/javinlim/Documents/School/Year 3/Multi-Country-Rostering-2/bm25_docs.json
+🏗️ Building new FAISS index...
+💾 FAISS index and metadata saved to /Users/javinlim/Documents/School/Year 3/Multi-Country-Rostering-2/faiss_index
+INFO:     127.0.0.1:57853 - "POST /agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57853 - "GET /tasks/38830c2e-03b9-48cf-9eaa-52d1124a2c69 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "POST /agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57865 - "GET /tasks/c047261b-30d5-4e33-b665-572bc86a39de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "POST /agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57899 - "GET /tasks/31748a6b-8025-4896-99a8-6fe9af396bcc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "POST /agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /tasks/6d1104b8-fef5-4085-b1ff-db126badf8a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "POST /agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /tasks/fff4441b-1c02-4eff-bb46-b2fb7c3fc4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58032 - "GET /db/staff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58032 - "GET /db/staff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58032 - "GET /db/roster/ranges HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58032 - "GET /db/roster/ranges HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "GET /db/staff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "GET /db/staff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "GET /db/roster/ranges HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "GET /db/roster/ranges HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "OPTIONS /oracle/insights HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58047 - "GET /db/roster?start_date=2026-04-10&end_date=2026-04-12 HTTP/1.1" 200 OK
+Oracle LLM error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash
+Please retry in 38.433079778s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 38
+}
+]
+INFO:     127.0.0.1:58044 - "POST /oracle/insights HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "OPTIONS /validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "POST /validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /tasks/66d66aa5-42e9-4b28-aafe-0173334de8b4 HTTP/1.1" 200 OK

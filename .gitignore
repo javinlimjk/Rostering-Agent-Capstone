@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.venv
+.env
+mlruns/
+*.pkl
+*.faiss
+faiss_index/
+bm25_docs.json
+faiss_docs.json
